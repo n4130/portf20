@@ -30,6 +30,9 @@
 
 </head>
 <body>
+  <script>
+    AOS.init();
+  </script>
 
     <header id="header">
         <div class="main-header">
@@ -166,7 +169,9 @@
 
   <section id="works" class="wrapper clearfix menu03">
     <div id="works-a">
-      <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100" class="work-img"><img src="./images/works-a.jpg" alt="portfolio01"></div>
+      <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100" class="work-img">
+        <!-- <img src="./images/works-a.jpg" alt="portfolio01"> -->
+      </div>
       <article class="work-txt">
         <div class="work-txt-bg"></div>
         <div class="work-txt-text">
@@ -224,7 +229,9 @@
 
   <section id="works">
     <div id="works-b">
-      <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100" class="work-img"><img src="./images/works-b.jpg" alt="portfolio01"></div>
+      <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100" class="work-img">
+        <!-- <img src="./images/works-b.jpg" alt="portfolio01"> -->
+      </div>
       <article class="work-txt">
         <div class="work-txt-bg"></div>
         <div class="work-txt-text">
@@ -282,7 +289,9 @@
 
   <section id="works">
     <div id="works-c">
-      <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100" class="work-img"><img src="./images/works-c.jpg" alt="portfolio01"></div>
+      <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100" class="work-img">
+        <!-- <img src="./images/works-c.jpg" alt="portfolio01"> -->
+      </div>
       <article class="work-txt">
         <div class="work-txt-bg"></div>
         <div class="work-txt-text">
@@ -391,44 +400,9 @@
 
 
 
-  <script>
-    AOS.init();
-  </script>
-
 
 <script>
-  //   $('.parent-container').magnificPopup({
-  // delegate: 'a', // child items selector, by clicking on it popup will open
-  // type: 'image'
-  // // other options
-  // });
-   
-  $('.parent-container a').magnificPopup({
-      type: 'image',
-      closeBtnInside: false,
-      closeOnContentClick: false,
-    
-      callbacks: {
-        open: function() {
-          var self = this;
-          self.wrap.on('click.pinhandler', 'img', function() {
-            self.wrap.toggleClass('mfp-force-scrollbars');
-          });
-        },
-        beforeClose: function() {
-              this.wrap.off('click.pinhandler');
-          this.wrap.removeClass('mfp-force-scrollbars');
-        }
-      },
-      
-      image: {
-        verticalFit: false
-      }
-    
-    });
-
-
-
+ 
   // 타이핑js
   var typingBool = false; 
   var typingIdx=0; 
@@ -490,6 +464,38 @@
       }
     } 
   }  
+
+//   $('.parent-container').magnificPopup({
+  // delegate: 'a', // child items selector, by clicking on it popup will open
+  // type: 'image'
+  // // other options
+  // });
+   
+  $('.parent-container a').magnificPopup({
+      type: 'image',
+      closeBtnInside: false,
+      closeOnContentClick: false,
+    
+      callbacks: {
+        open: function() {
+          var self = this;
+          self.wrap.on('click.pinhandler', 'img', function() {
+            self.wrap.toggleClass('mfp-force-scrollbars');
+          });
+        },
+        beforeClose: function() {
+              this.wrap.off('click.pinhandler');
+          this.wrap.removeClass('mfp-force-scrollbars');
+        }
+      },
+      
+      image: {
+        verticalFit: false
+      }
+    
+    });
+
+
 
 </script>
 
