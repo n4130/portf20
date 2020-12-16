@@ -1034,7 +1034,6 @@ footer {
 }
 
 
-
 /* about */
 #about {
     width: 100%;
@@ -1234,116 +1233,26 @@ footer {
 
 .contact-tatle {
     width: 300px;
-    /* padding-top: 60px;
-    color: #1B345B;
-    font-family: 'Noto Sans KR', sans-serif;
-    position: relative; */
 }
 
 .contact-tatle > h2 {
     text-align: center;
-    /* font-size: 55px;
-    font-family: 'Montserrat', sans-serif; */
 }
 .contact-me {
     width: 300px;
-    /* margin-top: 30px; */
 }
 .contact-me > ul {
-    /* outline: 3px solid #1D1D1B; */
     width: 300px; height: 350px;
 }
-/* .contact-me > ul > li {
-    border-bottom: 0.5px solid #1D1D1B;
-    height: 50px;
-    padding: 15px;
-} */
-/* .contact-me > ul > li > span {
-    font-weight: 600;
-}
-.contact-me > ul > li:nth-child(4) {
-    border: none;
-} */
 .contact-me > ul > li:last-child {
     height: 150px;
-    /* line-height: 30px;
-    padding-left: 50px;
-    padding-top: 5px; */
 }
-/* .contact-me > ul > li:last-child span {
-    font-style: italic;
-    font-weight: 600;
-    color: #1B345B;
-}
-.contact-me > ul > li:last-child p .fas{
-    padding-left: 3px;
-    color: #EC632C;
-    animation-name: star; 
-    animation-duration: 0.8s; 
-    animation-iteration-count: infinite;
-}
-@keyframes star {
-    0% { transform: scale(1);}
-    30% { transform: scale(.9);}
-    60% { transform: scale(1.2);}
-    100% { transform: scale(1);}
-  } */
-
-/* .thankyou {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    padding-top: 6.5%;
-    font-size: 55px;
-    color: #D0EBF8;
-} */
-/* footer {
-    position: relative;
-    bottom: 0px;
-} */
-/* .footer {
-    width: 100%; 
-    height: 130px;
-    background-color: #1B345B;
-} */
 .footer > h6 {
     width: 250px;
-    /* text-align: center;
-    color: #EDEDED;
-    font-weight: 200;
-    font-size: 12px;
-    letter-spacing: 0.5px;
-    padding: 2px 0; */
 }
-/* .footer > h6:first-child {
-    padding-top: 40px;
 }
-.footer > h6:last-child {
-    padding-bottom: 40px;
-}
- */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
 
 /* 768 ~ 959 중간(태블릿부터 작은 모니터까지)  */
 @media screen and (min-width: 768px) and (max-width:950px){
@@ -1381,6 +1290,7 @@ footer {
     font-size: 80px;
 }
 #myself {
+    /* outline: 1px solid red; */
     width: 800px;
 }
 #myself > h2 {
@@ -1439,8 +1349,17 @@ footer {
 }
 
 
+/* menu btn */
+#menu {
+    min-width: 768px; 
+    min-height: 800px; 
+}
+
+
 /* about */
 #about {
+    width: 100%;
+    height: 800px;
 }
 .txt {
     width: 800px;
@@ -1465,6 +1384,11 @@ footer {
 
 
 /* works */
+#works {
+    width: 800px;
+    height: 850px;
+    /* outline: 1px solid red; */
+}
 #works-a {
     width: 800px; 
     /* outline: 1px solid red; */
@@ -1474,7 +1398,7 @@ footer {
     left: -10px;
 }
 .work-txt {
-    top: calc(60%); 
+    top: calc(63%); 
     right: calc(6%); 
 }
 .work-txt > .work-txt-bg {
