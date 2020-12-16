@@ -1258,7 +1258,7 @@ footer {
 @media screen and (min-width: 768px) and (max-width:950px){
 #header {
     width: 100%;
-    height: 750px;
+    height: 730px;
 }
 .main-header {
     /* outline: 1px solid red; */
@@ -1390,19 +1390,22 @@ footer {
 #works {
     width: 800px;
     height: 100vh;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 #works-a {
     width: 800px; height: 850px;
+    position: relative;
     /* outline: 1px solid red; */
 }
 #works-a .work-img {
+    position: absolute;
     top: 50px; 
     left: -10px;
 }
 .work-txt {
-    top: calc(63%); 
-    right: calc(6%); 
+    position: absolute;
+    top: 480px;
+    margin-right: 50px;
 }
 .work-txt > .work-txt-bg {
     width: 700px;
@@ -1460,9 +1463,12 @@ footer {
 }
 /* #works-b */
 #works-b {
-    width: 800px; 
+    width: 800px; height: 850px;
+    position: relative;
+    /* outline: 1px solid red; */
 }
 #works-b .work-img {
+    position: absolute;
     top: 50px; 
     left: -10px;
 }
@@ -1473,9 +1479,12 @@ footer {
 }
 /* #works-c */
 #works-c {
-    width: 800px; 
+    width: 800px; height: 850px;
+    position: relative;
+    /* outline: 1px solid red; */
 }
 #works-c .work-img {
+    position: absolute;
     top: 50px; 
     left: -10px;
 }
@@ -1487,6 +1496,11 @@ footer {
 
 
 /* other-works */
+#other-works {
+    width: 100%;
+    height: 730px;
+    background: #D0EBF8;
+}
 .other-works-txt {
     width: 800px;
 }
@@ -1551,6 +1565,10 @@ footer {
 
 
 /* contact */
+#contact {
+    width: 100%;
+    height: 715px;
+}
 .contact-tatle {
     width: 800px;
 }
